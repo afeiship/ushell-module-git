@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ## path:
-ROOT_PATH=$(pwd);
+ROOT_PATH=$(dirname $BASH_SOURCE);
 
 git config --global user.email "1290657123@qq.com";
 git config --global user.name "feizheng";
