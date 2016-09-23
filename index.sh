@@ -24,5 +24,5 @@ alias gd='git diff';
 alias go='git checkout ';
 alias gk='gitk --all&';
 alias gx='gitx --all';
-alias gg="${ROOT_PATH}/quick_commit.sh";
+alias gg="${ROOT_PATH}/quick-commit.sh";
 alias ggg='gaa && gcm "wip" && gp';
