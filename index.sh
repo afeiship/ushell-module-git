@@ -14,7 +14,8 @@ alias gc='git clone';
 
 
 ## git revert:
-alias gr='git checkout -f'
+alias gf='git checkout -f';
+alias gc='git checkout';
 
 ## git others:
 alias gs='git status ';
