@@ -14,15 +14,14 @@ alias gc='git clone';
 
 
 ## git revert:
-alias gf='git checkout -f';
-alias gc='git checkout';
+alias gr='git checkout -f';
+alias go='git checkout ';
 
 ## git others:
 alias gs='git status ';
 alias ga='git add ';
 alias gb='git branch ';
 alias gd='git diff';
-alias go='git checkout ';
 alias gk='gitk --all&';
 alias gx='gitx --all';
 alias gg="${ROOT_PATH}/quick-commit.sh";
