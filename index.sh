@@ -27,5 +27,8 @@ alias gx='gitx --all';
 alias gg="${ROOT_PATH}/quick-commit.sh";
 alias ggg='gaa && gcm "wip" && gp';
 
+## git reset:
+alias git-reset="${ROOT_PATH}/reset-git.sh";
+
 ## add github cache:
 alias github-cache='ssh-add ~/.ssh/id_rsa.github.com >/dev/null 2>/dev/null;';
