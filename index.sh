@@ -27,6 +27,10 @@ alias gx='gitx --all';
 alias gg="${ROOT_PATH}/quick-commit.sh";
 alias ggg='gaa && gcm "wip" && gp';
 
+## git tags:
+alias ggt="${ROOT_PATH}/quick-tag.sh";
+
+
 ## git reset:
 alias git-reset="${ROOT_PATH}/reset-git.sh";
 
