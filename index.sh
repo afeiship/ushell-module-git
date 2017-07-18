@@ -11,6 +11,7 @@ alias gaa='git add -A';
 alias gcm='git commit -m ';
 alias goo='git checkout origin ';
 alias gc='git clone';
+alias gc1='git clone --depth=1'
 
 
 ## git revert:
