@@ -1,0 +1,21 @@
+{
+    "name": "ushell-module-git",
+    "version": "0.0.1",
+    "description": "Unix like shell module for git.",
+    "main": "index.sh",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/afeiship/ushell-module-git.git"
+    },
+    "keywords": [
+        "ushell",
+        "unix",
+        "shell"
+    ],
+    "author": "afei",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/afeiship/ushell-module-git/issues"
+    },
+    "homepage": "https://github.com/afeiship/ushell-module-git#readme"
+}

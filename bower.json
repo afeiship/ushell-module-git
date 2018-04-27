@@ -4,7 +4,7 @@
   "authors": [
     "feizheng <1290657123@qq.com>"
   ],
-  "description": "Unix like shell module for get.",
+  "description": "Unix like shell module for git.",
   "main": "index.sh",
   "keywords": [
     "git",
