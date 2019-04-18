@@ -17,6 +17,7 @@ alias gc1='git clone --depth=1'
 ## git revert:
 alias gr='git checkout -f';
 alias gck='git checkout ';
+alias gm='git merge ';
 
 ## git others:
 alias gs='git status ';
