@@ -17,11 +17,17 @@ alias gc1='git clone --depth=1'
 ## git revert:
 alias gr='git checkout -f';
 alias gck='git checkout ';
+
+# merge:
 alias gm='git merge ';
+alias gmm='git merge master';
 alias gmd='git merge develop';
 alias gmdev='git merge dev';
-alias gmst='git checkout master';
-alias gdev='git checkout develop';
+
+## chekcout
+alias gckm='git checkout master';
+alias gckd='git checkout develop';
+alias gckdev='git checkout dev';
 
 ## git others:
 alias gs='git status ';
