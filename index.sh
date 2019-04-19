@@ -18,6 +18,12 @@ alias gc1='git clone --depth=1'
 alias gr='git checkout -f';
 alias gck='git checkout ';
 alias gm='git merge ';
+alias gm-dev='git merge develop';
+alias gm-dev-p='git merge develop && git push';
+alias gm-d='git merge dev';
+alias gm-d-p='git merge dev && git push';
+alias gmst='git checkout master';
+alias gdev='git checkout develop';
 
 ## git others:
 alias gs='git status ';
