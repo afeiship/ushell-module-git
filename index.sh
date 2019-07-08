@@ -33,7 +33,7 @@ alias gckd='git checkout develop';
 alias gckdev='git checkout dev';
 
 ## git others:
-alias gst='git status ';
+alias gs='git status ';
 alias ga='git add ';
 alias gb='git branch ';
 alias gd='git diff';
