@@ -30,6 +30,7 @@ alias gmdev='git merge dev';
 ## chekcout
 alias gckm='git checkout master';
 alias gckd='git checkout develop';
+alias gckr='git checkout release';
 alias gckdev='git checkout dev';
 
 ## git others:
