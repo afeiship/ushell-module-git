@@ -2,6 +2,8 @@
 ## path:
 ROOT_PATH=$(dirname $BASH_SOURCE);
 
+source $ROOT_PATH/git-flow.sh;
+
 ## git base:
 alias gl='git pull';
 alias gp='git push';
@@ -14,7 +16,7 @@ alias gc='git clone';
 alias gc1='git clone --depth=1';
 
 # git fetch:
-alias gf='git fetch';
+alias gft='git fetch';
 
 
 ## git revert:
