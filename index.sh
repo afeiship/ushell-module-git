@@ -47,6 +47,7 @@ alias ggg='gaa && gcm "wip" && gp';
 
 ## git tags:
 alias ggt="${ROOT_PATH}/quick-tag.sh";
+alias gtt="git push origin --tags";
 
 
 ## git reset:
