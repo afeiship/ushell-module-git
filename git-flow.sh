@@ -27,4 +27,7 @@ alias gfr-finish="git flow release finish "
 alias gfr-publish="git flow release publish "
 alias gfr-track="git flow release track "
 
-# release
+# resources
+# https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow
+# https://zhangmengpl.gitbooks.io/gitlab-guide/content/whatisgitflow.html
+# https://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html
