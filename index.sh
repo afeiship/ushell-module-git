@@ -9,6 +9,7 @@ alias gl='git pull';
 alias gp='git push';
 alias glo='git pull origin ';
 alias gpo='git push origin ';
+alias gpa='git push --all -u';
 alias gaa='git add -A';
 alias gcm='git commit -m ';
 alias goo='git checkout origin ';
