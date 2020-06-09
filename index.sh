@@ -9,7 +9,12 @@ alias gl='git pull';
 alias gp='git push';
 alias glo='git pull origin ';
 alias gpo='git push origin ';
+
+# push branchs/tags/deletes
 alias gpa='git push --all -u';
+alias gpt="git push origin --tags";
+alias gpd="git push origin --delete ";
+
 alias gaa='git add -A';
 alias gcm='git commit -m ';
 alias goo='git checkout origin ';
@@ -48,8 +53,6 @@ alias ggg='gaa && gcm "wip" && gp';
 
 ## git tags:
 alias ggt="${ROOT_PATH}/quick-tag.sh";
-alias gtt="git push origin --tags";
-alias gtd="git push origin --delete ";
 
 
 ## git reset:
