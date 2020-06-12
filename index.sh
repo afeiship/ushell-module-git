@@ -23,6 +23,7 @@ alias gc1='git clone --depth=1';
 
 # git fetch:
 alias gft='git fetch';
+alias gfa='git fetch --all';
 
 
 ## git revert:
