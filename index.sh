@@ -64,7 +64,7 @@ alias git-reset="${ROOT_PATH}/reset-git.sh";
 alias github-cache='ssh-add ~/.ssh/id_rsa.github.com >/dev/null 2>/dev/null;';
 
 # git-url-cli
-alias guc='git-url-cli'
+# alias guc='git-url-cli'
 
 # Install
 ## curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
