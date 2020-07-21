@@ -6,6 +6,11 @@
 npm i -S @feizheng/ushell-module-git
 ```
 
+## dependencies
+```shell
+npm i -g @feizheng/git-url-cli
+```
+
 ## encoding utf-8
 + http://www.worldhello.net/gotgit/08-git-misc/020-git-charset.html
 
