@@ -6,6 +6,7 @@ source $ROOT_PATH/git-flow.sh;
 
 ## git base:
 alias gl='git pull';
+alias glb='git pull --rebase';
 alias gp='git push';
 alias glo='git pull origin ';
 alias gpo='git push origin ';
