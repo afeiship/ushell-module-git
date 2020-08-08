@@ -7,24 +7,24 @@ alias gf="git flow"
 # features
 alias gff-init="git flow init"
 alias gff-start="git flow feature start "
-alias gff-start="git flow feature start "
 alias gff-finish="git flow feature finish "
 alias gff-publish="git flow feature publish "
+alias gff-pull="git flow feature pull "
 alias gff-track="git flow feature track "
 
 
 # hotfixes
 alias gfh-start="git flow hotfix start "
-alias gfh-start="git flow hotfix start "
 alias gfh-finish="git flow hotfix finish "
 alias gfh-publish="git flow hotfix publish "
+alias gfh-pull="git flow hotfix pull "
 alias gfh-track="git flow hotfix track "
 
 # release
 alias gfr-start="git flow release start "
-alias gfr-start="git flow release start "
 alias gfr-finish="git flow release finish "
 alias gfr-publish="git flow release publish "
+alias gfr-pull="git flow release pull "
 alias gfr-track="git flow release track "
 
 # resources
