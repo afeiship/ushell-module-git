@@ -1,6 +1,6 @@
 {
     "name": "@feizheng/ushell-module-git",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "Unix like shell module for git.",
     "main": "index.sh",
     "repository": {
