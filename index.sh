@@ -54,7 +54,7 @@ alias gd='git diff';
 alias gk='gitk --all&';
 alias gx='gitx --all';
 alias gg="${ROOT_PATH}/quick-commit.sh";
-alias ggg='gaa && gcm "wip" && gp';
+alias ggg='gam "wip" && gp';
 
 ## git tags:
 alias ggt="${ROOT_PATH}/quick-tag.sh";
