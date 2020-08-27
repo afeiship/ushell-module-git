@@ -16,7 +16,7 @@ alias gpa='git push --all -u';
 alias gpt="git push origin --tags";
 alias gpd="git push origin --delete ";
 
-alias gam='git add -A';
+alias gaa='git add -A';
 alias gcm='git commit -m ';
 alias gam='git commit -am ';
 alias goo='git checkout origin ';
@@ -54,7 +54,7 @@ alias gd='git diff';
 alias gk='gitk --all&';
 alias gx='gitx --all';
 alias gg="${ROOT_PATH}/quick-commit.sh";
-alias ggg='gam "wip" && gp';
+alias ggg='gaa && gcm "wip" && gp';
 
 ## git tags:
 alias ggt="${ROOT_PATH}/quick-tag.sh";
