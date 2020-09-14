@@ -4,16 +4,17 @@
 alias gfl='git flow'
 alias gfli='git flow init'
 
-# checkout
-alias gcd='git checkout develop'
-alias gch='git checkout hotfix'
-alias gcr='git checkout release'
-
 # feature/bugfix/hotfix/release
 alias gflf='git flow feature'
 alias gflb='git flow bugfix'
 alias gflh='git flow hotfix'
 alias gflr='git flow release'
+
+# git flow checkout
+alias gflfc='git flow feature checkout'
+alias gflbc='git flow bugfix checkout'
+alias gflhc='git flow hotfix checkout'
+alias gflrc='git flow release checkout'
 
 # start
 alias gflfs='git flow feature start'
