@@ -51,6 +51,7 @@ alias gckdev='git checkout dev';
 alias gs='git status ';
 alias ga='git add ';
 alias gb='git branch ';
+alias gbh='git branch -h';
 alias gd='git diff';
 alias gk='gitk --all&';
 alias gx='gitx --all';
