@@ -8,7 +8,14 @@ npm i -S @feizheng/ushell-module-git
 
 ## dependencies
 ```shell
+# guc
 npm i -g @feizheng/git-url-cli
+
+# t2k
+npm i -g @feizheng/topics2keywords
+
+# git-sweep
+npm i -g @feizheng/git-sweep
 ```
 
 ## encoding utf-8

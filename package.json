@@ -1,24 +1,19 @@
 {
-    "name": "@feizheng/ushell-module-git",
-    "version": "1.0.19",
-    "description": "Unix like shell module for git.",
-    "main": "index.sh",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/afeiship/ushell-module-git.git"
-    },
-    "keywords": [
-        "ushell",
-        "unix",
-        "shell"
-    ],
-    "author": "afei",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/afeiship/ushell-module-git/issues"
-    },
-    "homepage": "https://github.com/afeiship/ushell-module-git#readme",
-    "publishConfig": {
-        "registry": "https://registry.npmjs.org/"
-    }
+  "name": "@feizheng/ushell-module-git",
+  "version": "1.0.20",
+  "description": "Unix like shell module for git.",
+  "main": "index.sh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afeiship/ushell-module-git.git"
+  },
+  "author": "afei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afeiship/ushell-module-git/issues"
+  },
+  "homepage": "https://github.com/afeiship/ushell-module-git#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
