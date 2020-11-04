@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/afeiship/ushell-module-git/issues"
   },
-  "homepage": "https://github.com/afeiship/ushell-module-git#readme",
+  "homepage": "https://github.com/afeiship/ushell-module-git",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   }
