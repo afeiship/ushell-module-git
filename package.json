@@ -15,5 +15,14 @@
   "homepage": "https://github.com/afeiship/ushell-module-git",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "keywords": [
+    "shell",
+    "git",
+    "npm",
+    "private",
+    "git-flow",
+    "ushell",
+    "unix"
+  ]
 }
