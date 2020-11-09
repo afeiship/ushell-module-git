@@ -3,7 +3,7 @@
 
 ## installation
 ```shell
-npm i -S @feizheng/ushell-module-git
+npm i -S @jswork/ushell-module-git
 ```
 
 ## dependencies
