@@ -3,6 +3,8 @@
 # basic
 alias gfl='git flow'
 alias gfli='git flow init'
+alias gflid='git flow init -d -t v'
+
 
 # feature/bugfix/hotfix/release
 alias gflf='git flow feature'
