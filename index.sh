@@ -65,6 +65,9 @@ alias ggt="${ROOT_PATH}/quick-tag.sh";
 ## git reset:
 alias git-reset="${ROOT_PATH}/reset-git.sh";
 
+# check git repo size
+alias git-size="git count-objects -vH";
+
 ## add github cache:
 alias github-cache='ssh-add ~/.ssh/id_rsa.github.com >/dev/null 2>/dev/null;';
 
