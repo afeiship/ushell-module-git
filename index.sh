@@ -32,7 +32,7 @@ alias gfp='git fetch --all --prune';
 ## git revert:
 alias gr='git checkout -f';
 alias gck='git checkout ';
-alias gckk='git checkout -';
+alias g-='git checkout -';
 alias gcy='git cherry-pick';
 
 # merge:
