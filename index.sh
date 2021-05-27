@@ -2,7 +2,7 @@
 ## path:
 ROOT_PATH=$(dirname $BASH_SOURCE);
 
-source $ROOT_PATH/git-flow.sh;
+source $ROOT_PATH/modules/02-git-flow.sh;
 
 ## git base:
 alias gl='git pull';
@@ -55,15 +55,14 @@ alias gbh='git branch -h';
 alias gd='git diff';
 alias gk='gitk --all&';
 alias gx='gitx --all';
-alias gg="${ROOT_PATH}/quick-commit.sh";
+alias gg="${ROOT_PATH}/modules/05-quick-commit.sh";
 alias ggg='gaa && gcm "wip" && gp';
 
 ## git tags:
-alias ggt="${ROOT_PATH}/quick-tag.sh";
+alias gcd="${ROOT_PATH}/modules/01-gcd.sh";
+alias ggt="${ROOT_PATH}/modules/03-quick-tag.sh";
+alias git-reset="${ROOT_PATH}/modules/04-reset-git.sh";
 
-
-## git reset:
-alias git-reset="${ROOT_PATH}/reset-git.sh";
 
 # check git repo size
 alias git-size="git count-objects -vH";
