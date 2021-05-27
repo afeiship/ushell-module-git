@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
 GIT_URL=$1;
-git clone $GIT_URL && cd $(basename $_ .git)
+dir=`basename $GIT_URL .git`;
+
+if [ -d $dir ]; then
+    cd $dir && git pull;
+else
+    git clone $GIT_URL && cd $dir;
+fi

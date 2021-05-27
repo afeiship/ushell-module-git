@@ -59,7 +59,7 @@ alias gg="${ROOT_PATH}/modules/05-quick-commit.sh";
 alias ggg='gaa && gcm "wip" && gp';
 
 ## git tags:
-alias gcd="${ROOT_PATH}/modules/01-gcd.sh";
+alias gcd=". ${ROOT_PATH}/modules/01-gcd.sh";
 alias ggt="${ROOT_PATH}/modules/03-quick-tag.sh";
 alias git-reset="${ROOT_PATH}/modules/04-reset-git.sh";
 
