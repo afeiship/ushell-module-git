@@ -9,13 +9,13 @@ npm i -S @jswork/ushell-module-git
 ## dependencies
 ```shell
 # guc
-npm i -g @feizheng/git-url-cli
+npm i -g @jswork/git-url-cli
 
 # t2k
-npm i -g @feizheng/topics2keywords
+npm i -g @jswork/topics2keywords
 
 # git-sweep
-npm i -g @feizheng/git-sweep
+npm i -g @jswork/git-sweep
 ```
 
 ## encoding utf-8
