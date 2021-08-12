@@ -23,6 +23,10 @@ alias goo='git checkout origin ';
 alias gc='git clone';
 alias gc1='git clone --depth=1';
 
+# clean untrack files
+# https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
+alias gcf='git clean -f';
+
 # git fetch:
 alias gft='git fetch';
 alias gfa='git fetch --all';
