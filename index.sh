@@ -45,6 +45,12 @@ alias gmm='git merge master';
 alias gmd='git merge develop';
 alias gmdev='git merge dev';
 
+## rebase
+alias grb='git rebase ';
+alias grbm='git rebase master';
+alias grbd='git rebase develop';
+alias grbdev='git rebase dev';
+
 ## chekcout
 alias gckm='git checkout master';
 alias gckd='git checkout develop';
