@@ -16,7 +16,7 @@ alias gpa='git push --all -u';
 alias gpt="git push origin --tags";
 alias gpd="git push origin --delete ";
 
-alias gaa='git add -A';
+alias gaa='git add .';
 alias gcm='git commit -m ';
 alias gam='git commit -am ';
 alias goo='git checkout origin ';
