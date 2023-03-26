@@ -2,16 +2,10 @@
 GIT_URL=$1;
 dir=`basename $GIT_URL .git`;
 orgname=`echo $GIT_URL | awk -F [:/] '{print$2}'`;
-hub=`echo $GIT_URL | awk -F [:/] '{print$1}'`;
 
-# if is hub is saybot
-if [ $hub == 'git@git.saybot.net' ]; then
-    orgname='saybot';
-fi
-
-# A special case for `afeiship` org.
-if [ $orgname == 'afeiship' ]; then
-    orgname='github';
+# A special case for nono `aric-` org.
+if [[ $orgname != "aric-"* ]]; then
+    orgname="github";
 fi
 
 localdir="$HOME/$orgname/$dir";
