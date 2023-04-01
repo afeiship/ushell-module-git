@@ -72,6 +72,7 @@ alias ggg='gaa && gcm "wip" && gp';
 alias gcd=". ${ROOT_PATH}/modules/01-gcd.sh";
 alias ggt="${ROOT_PATH}/modules/03-quick-tag.sh";
 alias git-reset="${ROOT_PATH}/modules/04-reset-git.sh";
+alias git-clean="${ROOT_PATH}/modules/06-git-clean.sh";
 
 
 # check git repo size
