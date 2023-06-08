@@ -5,9 +5,15 @@ orgname=`echo $GIT_URL | awk -F [:/] '{print$2}'`;
 repourl=`echo $GIT_URL | awk -F [:/] '{print$1}'`;
 
 # A special case for nono `aric-` org.
+
 if [[ $orgname != "aric-"* ]]; then
-    orgname="github";
+    if [[ $orgname == "alo7i" ]]; then
+        orgname="aric-nono";
+    else
+        orgname="github";
+    fi
 fi
+
 
 if [[ $repourl == 'git@git.saybot.net' ]]; then
     orgname="saybot";
