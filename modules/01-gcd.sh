@@ -6,12 +6,8 @@ repourl=`echo $GIT_URL | awk -F [:/] '{print$1}'`;
 
 # A special case for nono `aric-` org.
 
-if [[ $orgname != "aric-"* ]]; then
-    if [[ $orgname == "alo7i" ]]; then
-        orgname="aric-nono";
-    else
-        orgname="github";
-    fi
+if [[ $orgname != "aric-"* || $orgname != "alo7i" ]]; then
+    orgname="github";
 fi
 
 
