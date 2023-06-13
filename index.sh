@@ -3,10 +3,10 @@
 ROOT_PATH=$(dirname $BASH_SOURCE);
 
 source $ROOT_PATH/modules/02-git-flow.sh;
+source $ROOT_PATH/modules/07-git-rebase.sh;
 
 ## git base:
 alias gl='git pull';
-alias glb='git pull --rebase';
 alias gp='git push';
 alias glo='git pull origin ';
 alias gpo='git push origin ';
@@ -41,17 +41,9 @@ alias gcy='git cherry-pick';
 
 # merge:
 alias gm='git merge ';
-alias gmb='git rebase ';
-alias gmbm='git rebase master';
 alias gmm='git merge master';
 alias gmd='git merge develop';
 alias gmdev='git merge dev';
-
-## rebase
-alias grb='git rebase ';
-alias grbm='git rebase master';
-alias grbd='git rebase develop';
-alias grbdev='git rebase dev';
 
 ## chekcout
 alias gckm='git checkout master';

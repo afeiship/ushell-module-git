@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-#!/bin/bash
-
 # Delete local tags
 git tag -l | xargs git tag -d
 
