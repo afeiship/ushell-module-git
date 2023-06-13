@@ -41,6 +41,8 @@ alias gcy='git cherry-pick';
 
 # merge:
 alias gm='git merge ';
+alias gmb='git rebase ';
+alias gmbm='git rebase master';
 alias gmm='git merge master';
 alias gmd='git merge develop';
 alias gmdev='git merge dev';
