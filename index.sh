@@ -7,9 +7,10 @@ source $ROOT_PATH/modules/07-git-rebase.sh;
 
 ## git base:
 alias gl='git pull';
-alias gp='git push';
 alias glo='git pull origin ';
+alias gp='git push';
 alias gpo='git push origin ';
+alias gpof='git push origin -f';
 
 # push branchs/tags/deletes
 alias gpa='git push --all -u';
@@ -28,6 +29,7 @@ alias gc1='git clone --depth=1';
 alias gcf='git clean -f';
 
 # git fetch:
+alias gfo='git fetch origin';
 alias gft='git fetch';
 alias gfa='git fetch --all';
 alias gfp='git fetch --all --prune';
@@ -44,6 +46,11 @@ alias gm='git merge ';
 alias gmm='git merge master';
 alias gmd='git merge develop';
 alias gmdev='git merge dev';
+
+# merge from remote:
+alias gmmr='git merge origin/master';
+alias gmdr='git merge origin/develop';
+alias gmdevr='git merge origin/dev';
 
 ## chekcout
 alias gckm='git checkout master';
