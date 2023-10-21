@@ -53,10 +53,10 @@ alias gmdr='git merge origin/develop';
 alias gmdevr='git merge origin/dev';
 
 ## chekcout
-alias gckm='git checkout master';
-alias gckd='git checkout develop';
+alias gckm='git checkout master 2>/dev/null || git checkout main 2>/dev/null';
+alias gckd='git checkout develop 2>/dev/null || git checkout dev 2>/dev/null';
+alias gckb='git checkout beta';
 alias gckr='git checkout release';
-alias gckdev='git checkout dev';
 
 ## git others:
 alias gs='git status ';
