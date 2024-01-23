@@ -82,6 +82,9 @@ alias git-size="git count-objects -vH";
 ## add github cache:
 alias github-cache='ssh-add ~/.ssh/id_rsa.github.com >/dev/null 2>/dev/null;';
 
+## move subdirs to root:
+alias mvg="${ROOT_PATH}/modules/08-mvg.sh";
+
 # git-url-cli
 # alias guc='git-url-cli'
 
