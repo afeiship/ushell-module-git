@@ -85,6 +85,8 @@ alias github-cache='ssh-add ~/.ssh/id_rsa.github.com >/dev/null 2>/dev/null;';
 ## move subdirs to root:
 alias mvg="${ROOT_PATH}/modules/08-mvg.sh";
 
+# oprr
+alias oprr="open https://github.com/applyai-dev/applyai-frontend/compare/dev...$(git branch --show-current)?expand=1";
 # git-url-cli
 # alias guc='git-url-cli'
 
