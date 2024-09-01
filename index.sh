@@ -86,7 +86,7 @@ alias github-cache='ssh-add ~/.ssh/id_rsa.github.com >/dev/null 2>/dev/null;';
 alias mvg="${ROOT_PATH}/modules/08-mvg.sh";
 
 # oprr
-alias oprr="bash /path/to/oprr.sh"
+alias oprr="${ROOT_PATH}/modules/09-oprr.sh"
 
 # git-url-cli
 # alias guc='git-url-cli'
