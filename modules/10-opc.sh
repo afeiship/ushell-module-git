@@ -9,5 +9,7 @@ REPO_PATH=$(echo "$GIT_URL" | awk -F'[:/]' '{print $(NF-1)"/"$NF}' | cut -d '.' 
 # 获取当前分支名称
 CURRENT_BRANCH=$(git branch --show-current)
 
+BRANCH=${1:-$CURRENT_BRANCH}
+
 # 打开 GitHub 对比页面
-open "https://github.com/$REPO_PATH/commits/$CURRENT_BRANCH"
+open "https://github.com/$REPO_PATH/commits/$BRANCH"
