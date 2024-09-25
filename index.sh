@@ -2,7 +2,8 @@
 ## path:
 ROOT_PATH=$(dirname $BASH_SOURCE);
 
-source $ROOT_PATH/modules/02-git-flow.sh;
+# 这个与我的命令 github-flow 冲突，所以暂时不用了
+# source $ROOT_PATH/modules/02-git-flow.sh;
 source $ROOT_PATH/modules/07-git-rebase.sh;
 
 ## git base:
