@@ -15,7 +15,6 @@ alias gpof='git push origin -f';
 
 # push branchs/tags/deletes
 alias gpa='git push --all -u';
-alias gpt="git push origin --tags";
 alias gpd="git push origin --delete ";
 
 alias gaa='git add .';
