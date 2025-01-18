@@ -70,7 +70,7 @@ alias gk='gitk --all&'
 alias gx='gitx --all'
 alias gg="${ROOT_PATH}/modules/05-quick-commit.sh"
 alias ggg='gaa && gcm "wip" && gp'
-alias ggi='aic2 --all -y && git push'
+alias ggi='${ROOT_PATH}/modules/12-ggi.sh'
 
 ## git tags:
 alias gcd=". ${ROOT_PATH}/modules/01-gcd.sh"
