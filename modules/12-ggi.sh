@@ -5,12 +5,11 @@ set timeout -1
 
 spawn git add .
 
-# 启动 aic2 命令
-spawn aic2 --all -y
-
 # 禁用日志输出
 log_user 0
 
+# 启动 aic2 命令
+spawn aic2 --all -y
 
 # 等待交互提示
 expect {
