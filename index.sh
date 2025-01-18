@@ -69,8 +69,8 @@ alias gd='git diff'
 alias gk='gitk --all&'
 alias gx='gitx --all'
 alias gg="${ROOT_PATH}/modules/05-quick-commit.sh"
+alias gi="${ROOT_PATH}/modules/12-ggi.sh"
 alias ggg='gaa && gcm "wip" && gp'
-alias ggi="${ROOT_PATH}/modules/12-ggi.sh"
 
 ## git tags:
 alias gcd=". ${ROOT_PATH}/modules/01-gcd.sh"
