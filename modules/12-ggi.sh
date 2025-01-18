@@ -3,6 +3,9 @@
 # 设置超时时间（-1 表示无超时）
 set timeout -1
 
+# 禁用日志输出
+log_user 0
+
 spawn git add .
 
 # 启动 aic2 命令
