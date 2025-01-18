@@ -4,9 +4,13 @@
 set timeout -1
 
 # 禁用日志输出
-# log_user 0
+log_user 0
 
 spawn git add .
+
+# 自定义消息输出
+
+puts "Git add all files successfully, now start aic2 and git push."
 
 # 启动 aic2 命令
 spawn aic2 --all -y
