@@ -92,7 +92,6 @@ alias mvg="${ROOT_PATH}/modules/08-mvg.sh"
 
 # oprr
 alias oprr="${ROOT_PATH}/modules/09-oprr.sh"
-alias opc="open $(guc -c)"
 
 # stash
 alias gst1='git stash'
