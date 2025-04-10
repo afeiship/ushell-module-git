@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
 
-## rebase
-alias grb='git rebase ';
-alias gmb='git rebase ';
-alias grbm='git rebase master';
-alias grbd='git rebase develop';
-alias grbdev='git rebase dev';
+# git rebase c/a
+alias gbc='git rebase --continue';
+alias gba='git rebase --abort';
 
 # git pull
 alias glb='git pull --rebase';
