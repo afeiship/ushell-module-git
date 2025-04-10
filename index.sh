@@ -78,8 +78,10 @@ alias ggg='gaa && gcm "wip" && gp'
 ## git tags:
 alias gcd=". ${ROOT_PATH}/modules/01-gcd.sh"
 alias ggt="${ROOT_PATH}/modules/03-quick-tag.sh"
+alias fixup="${ROOT_PATH}/modules/10-fixup.sh"
 alias git-reset="${ROOT_PATH}/modules/04-reset-git.sh"
 alias git-clean="${ROOT_PATH}/modules/06-git-clean.sh"
+
 
 # check git repo size
 alias git-size="git count-objects -vH"
@@ -105,5 +107,5 @@ alias gst2='git stash pop'
 
 # git-completion
 if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+    . ~/.git-completion.bash
 fi
