@@ -19,4 +19,6 @@ if [ -z "$BASE_COMMIT" ]; then
 fi
 
 # 执行交互式变基
+git add .
+git commit --fixup=$TARGET_COMMIT
 git rebase -i --autosquash $BASE_COMMIT
