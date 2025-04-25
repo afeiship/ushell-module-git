@@ -8,12 +8,6 @@ npm i -S @jswork/ushell-module-git
 
 ## dependencies
 ```shell
-# guc
-npm i -g @jswork/git-url-cli
-
-# t2k
-npm i -g @jswork/topics2keywords
-
 # git-sweep
 npm i -g @jswork/git-sweep
 ```
