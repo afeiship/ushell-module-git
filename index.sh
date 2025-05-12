@@ -12,6 +12,7 @@ alias gl='git pull'
 alias glo='git pull origin '
 alias gp='git push'
 alias gpo='git push origin '
+alias gpom='git push origin main'
 alias gpof='git push origin -f'
 
 # push branchs/tags/deletes
