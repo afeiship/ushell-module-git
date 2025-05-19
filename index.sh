@@ -22,6 +22,7 @@ alias gpd="git push origin --delete "
 alias gaa='git add .'
 alias gcm='git commit -m '
 alias gam='git commit -am '
+alias gme='git commit --amend'
 alias goo='git checkout origin '
 alias gc='git clone'
 alias gc1='git clone --depth=1'
