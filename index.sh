@@ -14,7 +14,7 @@ alias gp='git push'
 
 # git logs
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias glg2="git log --graph --abbrev-commit --decorate --date=relative --all"
+alias glg2="git log --oneline --decorate --all"
 
 alias gpo='git push origin '
 alias gpom='git push origin main'
