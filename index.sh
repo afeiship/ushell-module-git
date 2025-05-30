@@ -11,7 +11,7 @@ source $ROOT_PATH/modules/11-lazygit.sh
 alias gl='git pull'
 alias glo='git pull origin '
 alias gp='git push'
-alias gll="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gpo='git push origin '
 alias gpom='git push origin main'
 alias gpof='git push origin -f'
