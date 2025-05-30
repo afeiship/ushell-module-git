@@ -1,6 +1,6 @@
 {
   "name": "@jswork/ushell-module-git",
-  "version": "1.0.46",
+  "version": "1.0.47",
   "description": "Unix like shell module for git.",
   "main": "index.sh",
   "repository": {
