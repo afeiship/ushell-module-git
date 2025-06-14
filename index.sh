@@ -89,6 +89,7 @@ alias ggt="${ROOT_PATH}/modules/03-quick-tag.sh"
 alias fixup="${ROOT_PATH}/modules/10-fixup.sh"
 alias git-reset="${ROOT_PATH}/modules/04-reset-git.sh"
 alias git-clean="${ROOT_PATH}/modules/06-git-clean.sh"
+alias dbr="${ROOT_PATH}/modules/13-del-branch.sh"
 
 
 # check git repo size
