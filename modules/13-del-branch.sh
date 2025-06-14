@@ -14,9 +14,13 @@ DEFAULT_BRANCH=${2:-main} # 如果没有提供第二个参数，默认为 main
 echo "Switching to default branch ($DEFAULT_BRANCH)..."
 git checkout $DEFAULT_BRANCH || { echo "Failed to switch to $DEFAULT_BRANCH branch"; exit 1; }
 
-# 删除本地分支
-echo "Deleting local branch ($BRANCH_NAME)..."
-git branch -D $BRANCH_NAME || { echo "Failed to delete local branch $BRANCH_NAME"; }
+# 检查本地分支是否存在
+if git show-ref --quiet --verify refs/heads/$BRANCH_NAME; then
+  echo "Deleting local branch ($BRANCH_NAME)..."
+  git branch -D $BRANCH_NAME || { echo "Failed to delete local branch $BRANCH_NAME"; exit 1; }
+else
+  echo "Local branch '$BRANCH_NAME' does not exist. Skipping local deletion."
+fi
 
 # 删除远程分支
 echo "Deleting remote branch ($BRANCH_NAME)..."
