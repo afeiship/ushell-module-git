@@ -16,7 +16,7 @@ git checkout $DEFAULT_BRANCH || { echo "Failed to switch to $DEFAULT_BRANCH bran
 
 # 删除本地分支
 echo "Deleting local branch ($BRANCH_NAME)..."
-git branch -D $BRANCH_NAME || { echo "Failed to delete local branch $BRANCH_NAME"; exit 1; }
+git branch -D $BRANCH_NAME || { echo "Failed to delete local branch $BRANCH_NAME"; }
 
 # 删除远程分支
 echo "Deleting remote branch ($BRANCH_NAME)..."
