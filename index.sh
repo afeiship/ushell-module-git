@@ -79,6 +79,7 @@ alias gdc='git diff --cached'
 alias gk='gitk --all&'
 alias gx='gitx --all'
 alias gg="${ROOT_PATH}/modules/05-quick-commit.sh"
+alias ggl="${ROOT_PATH}/modules/05-1-quick-commit-no-push.sh"
 alias gi="oaic -al"
 alias gi2="${ROOT_PATH}/modules/12-ggi.sh"
 alias ggg='gaa && gcm "wip" && gp'
