@@ -12,6 +12,7 @@ alias gl='git pull'
 alias glo='git pull origin '
 alias glom='git pull origin main'
 alias gp='git push'
+alias gpgh='git push github';
 
 # git logs
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
