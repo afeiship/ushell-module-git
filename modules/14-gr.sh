@@ -5,6 +5,6 @@ gr() {
         echo "Usage: gr <file...>" >&2
         return 1
     fi
-    
+
     git checkout -f -- "$@"
 }
