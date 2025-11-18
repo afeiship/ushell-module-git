@@ -6,6 +6,7 @@ ROOT_PATH=$(dirname $BASH_SOURCE)
 # source $ROOT_PATH/modules/02-git-flow.sh;
 source $ROOT_PATH/modules/07-git-rebase.sh
 source $ROOT_PATH/modules/11-lazygit.sh
+source $ROOT_PATH/modules/14-gr.sh
 
 ## git base:
 alias gl='git pull'
@@ -45,7 +46,7 @@ alias gfa='git fetch --all'
 alias gfp='git fetch --all --prune'
 
 ## git revert:
-alias gr='git checkout -f'
+# alias gr='git checkout -f'
 alias grf='git clean -fd'
 alias grr='git checkout -f && git clean -fd'
 alias gck='git checkout '
