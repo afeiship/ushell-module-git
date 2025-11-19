@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 gr() {
+    # 当没有传值的时候，即为 "."
     if [ $# -eq 0 ]; then
-        echo "Usage: gr <file...>" >&2
-        return 1
+        git checkout -f -- .
+    else
+        git checkout -f -- "$@"
     fi
-
-    git checkout -f -- "$@"
 }
