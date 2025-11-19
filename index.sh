@@ -7,6 +7,7 @@ ROOT_PATH=$(dirname $BASH_SOURCE)
 source $ROOT_PATH/modules/07-git-rebase.sh
 source $ROOT_PATH/modules/11-lazygit.sh
 source $ROOT_PATH/modules/14-gr.sh
+source $ROOT_PATH/modules/15-ignore-file.sh
 
 ## git base:
 alias gl='git pull'
