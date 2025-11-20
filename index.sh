@@ -85,6 +85,7 @@ alias gg="${ROOT_PATH}/modules/05-quick-commit.sh"
 alias ggl="${ROOT_PATH}/modules/05-1-quick-commit-no-push.sh"
 # alias gi="oaic -al"
 alias gi="${ROOT_PATH}/modules/12-ggi.sh"
+alias gi2="git add . && aic2 --all -y --auto-select"
 alias ggg='gaa && gcm "wip" && gp'
 
 ## git tags:
