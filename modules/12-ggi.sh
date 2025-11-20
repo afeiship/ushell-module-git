@@ -9,7 +9,7 @@ set timeout -1
 spawn git add .
 
 # 启动 aic2 命令
-spawn aic2 --all -y
+spawn aic2 --all -y --auto-select
 
 # 等待交互提示
 expect {
