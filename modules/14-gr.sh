@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
 gr() {
-    # 当没有传值的时候，即为 "."
     if [ $# -eq 0 ]; then
-        git checkout -f -- .
+        # 作用于当前目录，丢弃所有本地变更（包括已暂存的）
+        git restore --source=HEAD --staged --worktree -- .
     else
-        git checkout -f -- "$@"
+        # 作用于指定路径，丢弃所有本地变更（包括已暂存的）
+        git restore --source=HEAD --staged --worktree -- "$@"
     fi
 }
