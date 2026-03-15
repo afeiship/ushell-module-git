@@ -6,6 +6,9 @@
 # Check if wt binary exists
 if command -v wt >/dev/null 2>&1; then
 
+    # Find the actual wt binary path
+    WT_BIN=$(command -v wt)
+
     # 🚀 wt function for true directory switching
     # This function overrides the wt binary to support real directory switching
     wt() {
@@ -13,7 +16,7 @@ if command -v wt >/dev/null 2>&1; then
             switch|co)
                 # Handle switch/co commands for true directory switching
                 shift
-                local wt_cli="wt"  # Use wt from PATH
+                local wt_cli="$WT_BIN"  # Use the actual binary path
 
                 # Get the path from wt switch command
                 local path
@@ -29,8 +32,8 @@ if command -v wt >/dev/null 2>&1; then
                 fi
                 ;;
             *)
-                # Pass all other commands to wt binary
-                wt "$@"
+                # Pass all other commands to wt binary (use full path to avoid recursion)
+                "$WT_BIN" "$@"
                 ;;
         esac
     }
