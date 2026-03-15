@@ -1,46 +1,33 @@
 #!/usr/bin/env bash
 
-# wtt CLI - Git Worktree Directory Switching (wtt = worktree-tool)
-# https://github.com/yourusername/worktree-cli
+# wt CLI - Git Worktree Directory Switching
+# Shell function for true directory switching with wt binary
 
 # Check if wt binary exists
 if command -v wt >/dev/null 2>&1; then
 
-    # Find the actual wt binary path
+    # Store the actual wt binary path to avoid recursion
     WT_BIN=$(command -v wt)
 
-    # 🚀 wt/wtt function for true directory switching
-    # wt and wtt (worktree-tool) provide directory switching without conflicting with wt binary
+    # wt function for directory switching
     wt() {
-        _wt_impl "$@"
-    }
-
-    wtt() {
-        _wt_impl "$@"
-    }
-
-    _wt_impl() {
         case "$1" in
             switch|co)
-                # Handle switch/co commands for true directory switching
                 shift
-                local wt_cli="$WT_BIN"  # Use the actual binary path
-
-                # Get the path from wt switch command
                 local path
-                path=$($wt_cli switch "$@" 2>/dev/null)
+                path=$($WT_BIN switch "$@" 2>/dev/null)
 
-                # Check if we got a valid path (absolute path starts with /)
+                # Check if we got a valid path
                 if [[ "$path" = /* ]] && [[ -d "$path" ]]; then
                     cd "$path" || return 1
                     echo "✅ Switched to: $path"
                 else
-                    # Let the original command handle errors and display
-                    $wt_cli switch "$@"
+                    # Show errors from the binary
+                    $WT_BIN switch "$@"
                 fi
                 ;;
             *)
-                # Pass all other commands to wt binary (use full path to avoid recursion)
+                # Pass all other commands to wt binary
                 "$WT_BIN" "$@"
                 ;;
         esac
@@ -48,9 +35,9 @@ if command -v wt >/dev/null 2>&1; then
 
 else
     # wt binary not found - show installation message once
-    if [[ -z "$WTT_SHOWN_MISSING" ]]; then
+    if [[ -z "$WT_SHOWN_MISSING" ]]; then
         echo "⚠️  wt CLI not found in PATH"
         echo "Install: go build -o wt main.go && sudo mv wt /usr/local/bin/wt"
-        export WTT_SHOWN_MISSING=1
+        export WT_SHOWN_MISSING=1
     fi
 fi
