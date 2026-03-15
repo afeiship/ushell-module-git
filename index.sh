@@ -8,6 +8,7 @@ source $ROOT_PATH/modules/07-git-rebase.sh
 source $ROOT_PATH/modules/11-lazygit.sh
 source $ROOT_PATH/modules/14-gr.sh
 source $ROOT_PATH/modules/15-ignore-file.sh
+source $ROOT_PATH/modules/16-wt.sh
 
 ## git base:
 alias gl='git pull'
