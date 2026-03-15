@@ -15,6 +15,7 @@ alias gl='git pull'
 alias glo='git pull origin '
 alias glom='git pull origin main'
 alias gp='git push'
+alias gptg='git push --tags';
 alias gpgh='git push github';
 
 # git logs
@@ -23,7 +24,8 @@ alias glg2="git log --oneline --decorate --all"
 
 alias gpo='git push origin '
 alias gpom='git push origin main'
-alias gpof='git push origin -f'
+alias gpof='git push origin --force-with-lease'
+alias gpoff='git push origin -f'
 
 # push branchs/tags/deletes
 alias gpa='git push --all -u'
