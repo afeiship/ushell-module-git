@@ -9,9 +9,17 @@ if command -v wt >/dev/null 2>&1; then
     # Find the actual wt binary path
     WT_BIN=$(command -v wt)
 
-    # 🚀 wtt function for true directory switching
-    # wtt (worktree-tool) provides directory switching without conflicting with wt binary
+    # 🚀 wt/wtt function for true directory switching
+    # wt and wtt (worktree-tool) provide directory switching without conflicting with wt binary
+    wt() {
+        _wt_impl "$@"
+    }
+
     wtt() {
+        _wt_impl "$@"
+    }
+
+    _wt_impl() {
         case "$1" in
             switch|co)
                 # Handle switch/co commands for true directory switching
