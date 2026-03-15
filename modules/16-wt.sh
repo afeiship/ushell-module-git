@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# wt CLI - Git Worktree Directory Switching
+# wtt CLI - Git Worktree Directory Switching (wtt = worktree-tool)
 # https://github.com/yourusername/worktree-cli
 
 # Check if wt binary exists
@@ -9,9 +9,9 @@ if command -v wt >/dev/null 2>&1; then
     # Find the actual wt binary path
     WT_BIN=$(command -v wt)
 
-    # 🚀 wt function for true directory switching
-    # This function overrides the wt binary to support real directory switching
-    wt() {
+    # 🚀 wtt function for true directory switching
+    # wtt (worktree-tool) provides directory switching without conflicting with wt binary
+    wtt() {
         case "$1" in
             switch|co)
                 # Handle switch/co commands for true directory switching
@@ -38,15 +38,11 @@ if command -v wt >/dev/null 2>&1; then
         esac
     }
 
-    # Convenience alias
-    alias wtco='wt co'  # Quick switch to worktree
-    alias wtl='wt switch --list'  # List all worktrees
-
 else
     # wt binary not found - show installation message once
-    if [[ -z "$WT_SHOWN_MISSING" ]]; then
+    if [[ -z "$WTT_SHOWN_MISSING" ]]; then
         echo "⚠️  wt CLI not found in PATH"
         echo "Install: go build -o wt main.go && sudo mv wt /usr/local/bin/wt"
-        export WT_SHOWN_MISSING=1
+        export WTT_SHOWN_MISSING=1
     fi
 fi
