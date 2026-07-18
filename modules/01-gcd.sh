@@ -9,7 +9,8 @@
 #
 # 目录规则：
 #   GitHub 仓库：
-#     - 有组织：~/github/<组织名>/<仓库名>
+#     - afeiship 组织（个人默认）：~/github/<仓库名>
+#     - 其它组织：~/github/<组织名>/<仓库名>
 #     - 无组织：~/github/<仓库名>
 #
 #   非 GitHub 仓库：
@@ -17,6 +18,9 @@
 #     - 无组织：~/git-repos/<域名>/<仓库名>
 #
 # 使用示例：
+#   gcd git@github.com:afeiship/ushell-module-git.git
+#     → ~/github/ushell-module-git
+#
 #   gcd git@github.com:anthropics/claude-code.git
 #     → ~/github/anthropics/claude-code
 #
@@ -57,8 +61,9 @@ fi
 
 # Determine local directory based on domain and org
 if [[ $domain == 'github.com' ]]; then
-    # GitHub repos: all go to ~/github/org/repo
-    if [[ -n $orgname ]]; then
+    # GitHub repos: all go to ~/github/
+    # afeiship is personal default org, skip org subdir
+    if [[ -n $orgname && $orgname != "afeiship" ]]; then
         localdir="$HOME/github/$orgname/$dir";
     else
         localdir="$HOME/github/$dir";
