@@ -43,6 +43,10 @@ alias gc1='git clone --depth=1'
 # https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
 alias gcf='git clean -f'
 
+# git ignore debug: list ignored files / find which rule hits a path
+alias gign='git ls-files -io --exclude-standard --directory'
+alias gwhy='git check-ignore -v'
+
 # git fetch:
 alias gfo='git fetch origin'
 alias gft='git fetch'
